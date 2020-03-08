@@ -24,7 +24,9 @@ There are five subsets of data with different graph size (i.e. number of nodes):
 [scale_free_10](https://exchangelabsgmu-my.sharepoint.com/:u:/g/personal/xguo7_masonlive_gmu_edu/EartEwo94NtJrsBUSDCaSyIBYgHxLSVj6qwziixaQHHHdw)
 
 #### Acknowledgements
+Please cite formally when you use these dataset as:
 
+Guo, X., Wu, L., & Zhao, L. (2018). Deep graph translation. arXiv preprint arXiv:1805.09980.
 
 
 ## IoT 
