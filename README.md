@@ -35,7 +35,9 @@ This dataset fit the problem of "one-to-one" mapping verision of graph translati
 There are three subsets of data with different graph size (i.e. number of nodes): 20, 40, and 60. In each subset, each input and output graph are stored in the "ER-(graph_size)-input-index.csv" and "ER-(graph_size)-target-index.csv" file. For each file, the value in i(th) comlume, j(th) row indicates whether the number of connections (edge weights) between Node i and Node j (1 indicating there is an edge and 0 otherwise). The value in i(th) row and i(th) column indicates the node attributes of the i(th) node. These dataset can be downloaded through the following links:
 
 [ER_20](https://exchangelabsgmu-my.sharepoint.com/:u:/g/personal/xguo7_masonlive_gmu_edu/EacBEmToBKdPtOhjJocARikBV6WRr7kNs50QyFShsx1k1w)
+
 [ER_40](https://exchangelabsgmu-my.sharepoint.com/:u:/g/personal/xguo7_masonlive_gmu_edu/EU7TdmWC_z1HvY3KLcPonZwBB167_MYTQZuW8wSso4Qc1g)
+
 [ER_60](https://exchangelabsgmu-my.sharepoint.com/:u:/g/personal/xguo7_masonlive_gmu_edu/EQYmsg6wu3ZAuvHS1Klc_gwBdZP3jCl_PM2p6p7nLMZ66g)
 
 #### Acknowledgements
