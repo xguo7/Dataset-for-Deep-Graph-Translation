@@ -96,8 +96,17 @@ Please cite formally when you use these dataset as:
 Guo, X., Wu, L., & Zhao, L. (2018). Deep graph translation. arXiv preprint arXiv:1805.09980.
 
 ## Chemistry Reaction
+The chemistry preaction product prediction is a fundamental problems in the organic chemistry, thus predicting the product (target graph) of chemical reaction given the reactant (input graph). Each molecular graph consists of atoms as nodes and bond as edges. The input molecule graph has multiple connected components since there are multiple molecules comprising the reactants. The reactions used for training are atom-mapped so that each atom in the product graph has a unique corresponding atom in the reactants. We collected reactions from USPTO granted patents (Lowe, 2014). we obtained a set of 5,000 reactions (reactant-product pair). Atom (node) features include its elemental identity, degree of connectivity, number of attached hydrogen atoms, implicit valence, and aromaticity. Bond (edge) features include bond type (single, double, triple, or aromatic), and whether it is connected.
+
 #### Description
+
 #### Acknowledgements
+Please cite formally when you use these dataset as:
+
+Guo X, Zhao L, Nowzari C, Rafatirad S, Homayoun H, Dinakarrao SM. Deep Multi-attributed Graph Translation with Node-Edge Co-evolution. Inhe 19th International Conference on Data Mining (ICDM 2019), pp. to appear 2019.
+
+D. Lowe, “Patent reaction extraction: downloads,” 2014.
+
 ## Brainnetwork  
 #### Description
 #### Acknowledgements
