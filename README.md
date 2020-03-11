@@ -117,7 +117,9 @@ The chemistry preaction product prediction can be formalized as the graph transl
 
 #### Description
 [Mol_edge]()
+
 [Mol_nodes]()
+
 [Num_nodes]()
 
 #### Acknowledgements
