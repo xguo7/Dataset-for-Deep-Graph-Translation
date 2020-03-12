@@ -99,9 +99,9 @@ The goal of this application was to forecast future potential users' malicious a
 There are two subsets of different sizes of graphs (i.e., 50 and 300). For each subset, we have train anf test folder seperately. Train set contains the graph pairs (one-to-one) which are just used for training. Test set contains data for each user. For each user, there are several input graphs (i.e. regular user authentication activity graph) and several target graphs (i.e. malware user authentication acticity graph). There input and target graphs in test set are not one-to-one, which can be tested by indirect evaluation. There is no node attributes for this dataset, and only edge attribute is considered.
 For each graph, the value of i(th) row and j(th) colomn refers to the edge attribute of Node i and j (0 refers to no links).
 
-[Auth_50]()
+[Auth_50](https://exchangelabsgmu-my.sharepoint.com/:u:/g/personal/xguo7_masonlive_gmu_edu/Ed5FSLojkadImn4PvDgln_8B6pCP0oePBXbq-osyDpBcFQ)
 
-[Auth_300]()
+[Auth_300](https://exchangelabsgmu-my.sharepoint.com/:u:/g/personal/xguo7_masonlive_gmu_edu/EbEM8KApJhlAuReZTsgzBjkBv4zVYpKOtLuE7ZK0J46q-w)
 #### Acknowledgements
 Please cite formally when you use these dataset as:
 
