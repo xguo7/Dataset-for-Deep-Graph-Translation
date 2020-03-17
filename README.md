@@ -135,9 +135,22 @@ D. Lowe, “Patent reaction extraction: downloads,” 2014.
 
 ## Molecule Optimization
 #### Problem Background
+The goal of drug discovery is to design molecules with desirable chemical properties. The task is challenging since the chemical space is vast and often difficult to navigate. One of the prevailing approaches, known as matched molecular pair analysis (MMPA), learns rules for generating “molecular paraphrases” that are likely to improve target chemical properties. The setup is analogous to machine translation: MMPA takes as input molecular pairs f(X; Y )g, where Y is a paraphrase of X with better chemical properties. However, current MMPA methods distill the matched pairs into graph transformation rules rather than treating it as a general translation problem over graphs based on parallel data. Molecular optimization can be formalized as graph-to-graph translation. Given a corpus of molecular pairs, the goal is to learn to translate input molecular graphs into better graphs.
+
+#### Data Collection
+Following standard practice in MMPA, we construct training sets by sampling molecular pairs (X; Y ) with significant property improvement and molecular similarity sim(X; Y ). The similarity constraint is also enforced at evaluation time to exclude arbitrary mappings that completely ignore the input X. We measure the molecular similarity by computing Tanimoto similarity over Morgan fingerprints (Rogers & Hahn, 2010). Next we describe how these tasks are constructed.
 
 #### Dataset Decription
+[Penalized logP](https://github.com/wengong-jin/iclr19-graph2graph/tree/master/data) The goal is to improve the penalized logP score of molecules under the similarity constraint. We experiment with two similarity constraints(0.4 and 0.6), and we extracted 99K and 79K translation pairs respectively from the ZINC dataset for training. 
+
+[Drug likeness (QED)](https://github.com/wengong-jin/iclr19-graph2graph/tree/master/data/qed) This task is to improve drug likeness of compounds. Specifically, the model needs to translate molecules with QED scores (Bickerton et al., 2012) within the range (0.7-0.8) into the higher range (0.9-1.0). This task is challenging as the target range contains only the top 6.6% of molecules in the ZINC dataset. We extracted a training set of 88K molecule pairs with similarity constraint (0.4). The test set contains 800 molecules.
+
+[Dopamine Receptor (DRD2)](https://github.com/wengong-jin/iclr19-graph2graph/tree/master/data/drd2) This task is to improve a molecule’s biological activity against a biological target named the dopamine type 2 receptor (DRD2). We use a trained model from Olivecrona et al. (2017) to assess the probability that a compound is active. We ask the model to translate molecules with predicted probability p < 0:05 into active compounds with p > 0.5. The active compounds represent only 1.9% of the dataset. With similarity constraint 0.4, we derived a training set of 34K molecular pairs from ZINC. The test set contains 1000 molecules.
+
 #### Acknowledgements
+Please cite formally when you use these dataset as:
+
+Jin, W., Yang, K., Barzilay, R., & Jaakkola, T. (2018). Learning multimodal graph-to-graph translation for molecular optimization. arXiv preprint arXiv:1812.01070.
 
 ## Brainnetwork  
 #### Description
