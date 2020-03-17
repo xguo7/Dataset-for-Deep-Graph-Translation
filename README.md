@@ -124,12 +124,20 @@ There are totally 7180 pairs of reactant anf product molecule graph in the datas
 
 [Num_nodes](https://exchangelabsgmu-my.sharepoint.com/:x:/g/personal/xguo7_masonlive_gmu_edu/EVLlh7btdvxPgsZaym_TyA4BQnyqE_oNE_jfEtM2v1gbTA)
 
+More datasets of chemical reaction can be found in [USPTO-15K](https://github.com/wengong-jin/nips17-rexgen).
+
 #### Acknowledgements
 Please cite formally when you use these dataset as:
 
 Guo X, Zhao L, Nowzari C, Rafatirad S, Homayoun H, Dinakarrao SM. Deep Multi-attributed Graph Translation with Node-Edge Co-evolution. Inhe 19th International Conference on Data Mining (ICDM 2019), pp. to appear 2019.
 
 D. Lowe, “Patent reaction extraction: downloads,” 2014.
+
+## Molecule Optimization
+#### Problem Background
+
+#### Dataset Decription
+#### Acknowledgements
 
 ## Brainnetwork  
 #### Description
