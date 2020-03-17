@@ -152,6 +152,18 @@ Please cite formally when you use these dataset as:
 
 Jin, W., Yang, K., Barzilay, R., & Jaakkola, T. (2018). Learning multimodal graph-to-graph translation for molecular optimization. arXiv preprint arXiv:1812.01070.
 
+## Circuit Simplification
+#### Data Collection 
+In circuit simplification, a logical expression is reduced to a logically equivalent expression with fewer operations. We construct a dataset of random circuits with 15-30 nodes (3-8 variables). Each node in the graph corresponds to one of four node types: variables, NOT-gates, OR-gates, and AND-gates. Node features are given by a one-hot encoding of the four node types. All generated circuits were valid, i.e. they have a single sink node, NOT-gate nodes have a single input, variable nodes have no inputs, and OR and AND-gate nodes have at least two inputs. To produce ground truth simplifications, the generated logical expressions corresponding to each graphs were simplified using the Sympy Python library, which provides an equivalent expression either in conjunctive normal form (CNF) or disjunctive normal form (DNF), depending on which is more compact. Any circuits that simplified to True (tautology) or False (unsatisfiable) were excluded. We use 10,000 circuit pairs for training and 2,500 pairs for testing. Node features are given
+by a one-hot encoding of the four node types.
+[Circuit dataset] (https://github.com/claradepaolis/D2DRNN)
+
+#### Acknowledgements
+Please cite formally when you use these dataset as:
+
+Kaluza, M. C. D. P., Amizadeh, S., & Yu, R. A Neural Framework for Learning DAG to DAG Translation.
+
+
 ## Brainnetwork  
 #### Description
 #### Acknowledgements
